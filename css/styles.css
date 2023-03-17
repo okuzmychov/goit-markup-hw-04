@@ -5,6 +5,7 @@
   --header-color: #ffffff;
   --hover-color: #404bbf;
   --button-color: #e7e9fc;
+  --icon-fill: #8e8f99;
 }
 
 body {
@@ -408,11 +409,16 @@ img {
   cursor: pointer;
 }
 
-.customers-icon {
-  color: green;
+.customers-item:hover,
+.customers-item:focus {
+  border-color: var(--hover-color);
 }
-.customers-icon:hover {
-  fill: currentColor;
+.customers-icon {
+  fill: var(--icon-fill);
+}
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: var(--hover-color);
 }
 
 /*----------- FOOTER ------------*/
