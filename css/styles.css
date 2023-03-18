@@ -54,14 +54,14 @@ img {
 /*---------- HEADER ---------- */
 .header {
   border-bottom: 1px solid var(--button-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -412,15 +412,19 @@ img {
   cursor: pointer;
 }
 
+.customers-link {
+}
+
+.customers-icon {
+  fill: var(--icon-fill);
+}
 .customers-item:hover,
 .customers-item:focus {
   border-color: var(--hover-color);
 }
-.customers-icon {
-  fill: var(--icon-fill);
-}
-.customers-icon:hover,
-.customers-icon:focus {
+
+.customers-item:hover .customers-icon,
+.customers-item:focus .customers-icon {
   fill: var(--hover-color);
 }
 
