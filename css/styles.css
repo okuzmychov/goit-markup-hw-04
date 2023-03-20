@@ -412,12 +412,15 @@ img {
   cursor: pointer;
 }
 
-.customers-link {
-}
-
 .customers-icon {
   fill: var(--icon-fill);
 }
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+  fill: var(--hover-color);
+}
+
 .customers-item:hover,
 .customers-item:focus {
   border-color: var(--hover-color);
