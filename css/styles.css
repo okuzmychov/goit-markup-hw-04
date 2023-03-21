@@ -406,25 +406,28 @@ img {
 .customers-item {
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  padding: 16px 32px;
   cursor: pointer;
 }
 
 .customers-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 
 .customers-icon {
   fill: var(--icon-fill);
 }
-.customers-item:hover,
-.customers-item:focus {
+.customers-link:hover,
+.customers-link:focus {
   border-color: var(--hover-color);
 }
 
-.customers-item:hover .customers-icon,
-.customers-item:focus .customers-icon {
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
   fill: var(--hover-color);
 }
 
