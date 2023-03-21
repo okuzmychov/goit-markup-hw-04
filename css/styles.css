@@ -64,6 +64,23 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
+.header-item {
+  position: relative;
+}
+
+.current::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0px;
+  bottom: 0px;
+
+  display: flex;
+  background: var(--hover-color);
+  border-radius: 2px;
+}
+
 .header-nav {
   display: flex;
 }
